@@ -1,0 +1,21 @@
+{
+  "name": "infinity-hall",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ciprianionescu/infinity-hall",
+  "authors": [
+    "Ciprian Ionescu <silviuciprian@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dat.gui": "*",
+    "jquery": "~2.1.4",
+    "three.js": "~0.71.0"
+  }
+}
