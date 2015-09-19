@@ -15,7 +15,7 @@ function App() {
 	pixelRatio = window.devicePixelRatio || 1;
 
 	renderer.setSize( window.innerWidth * pixelRatio, window.innerHeight * pixelRatio);
-	document.body.appendChild( renderer.domElement );
+	document.getElementById('content').appendChild( renderer.domElement );
 	renderer.domElement.style.width = window.innerWidth + 'px';
 	renderer.domElement.style.height = window.innerHeight + 'px';
 

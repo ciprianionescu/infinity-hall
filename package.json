@@ -1,5 +1,5 @@
 {
-  "name": "Infinity Hall",
+  "name": "Infinity-Hall",
   "version": "1.0.0",
   "description": "A three.js attempt at procedural geometry",
   "main": "index.js",

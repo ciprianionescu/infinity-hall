@@ -3,3 +3,26 @@ html, body {
 	padding:0;
 	background: #e8dabe;
 }
+
+#credits {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #e8dabe;
+    font-family: arial;
+}
+
+#credits a{
+  color: #e8dabe;
+  text-decoration:none;
+  display:inline-block;
+  border-bottom:2px solid #e8dabe;
+  padding-bottom:2px;
+}
+
+#credits a:hover{
+  border-bottom-width:4px;
+  padding-bottom: 0;
+}
