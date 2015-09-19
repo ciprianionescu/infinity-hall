@@ -1,7 +1,7 @@
 function App() {
 
 	var scene = new THREE.Scene();
-	var camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 1000 );
+	var camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 	var renderer = new THREE.WebGLRenderer({ 
 		antialias: true,
@@ -19,7 +19,7 @@ function App() {
 	renderer.domElement.style.width = window.innerWidth + 'px';
 	renderer.domElement.style.height = window.innerHeight + 'px';
 
-	scene.fog = new THREE.Fog(0xffffff, 0, 15);
+	scene.fog = new THREE.Fog(0xffffff, 0, 5);
 	scene.fog.color.setHex( 0xe8dabe );
 
 	//var controls = new THREE.OrbitControls( camera, renderer.domElement );
@@ -43,6 +43,7 @@ App.prototype.renderWorldPlane = function() {
 	var animation = new Animation(this.getApp());
 
 	animation.addTickCallback(new Animations.InfiniteHall());
+	animation.addTickCallback(new Animations.CameraWiggle());
 	animation.render();
 }
 

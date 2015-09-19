@@ -1,7 +1,7 @@
 if(!Animations) var Animations = new Object();
 
 Animations.InfiniteHall = function() {
-	var hallVisibleSegments = 30,
+	var hallVisibleSegments = 15,
 		speed = 0.015;
 
 	var hallSegments = Array();
